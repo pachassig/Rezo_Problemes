@@ -8,6 +8,7 @@ typedef struct Cell {
     sfVector2i coord;
     enum CellType type;
     sfSprite *sprite;
+    bool visited;
 } Cell;
 
 /// <summary>

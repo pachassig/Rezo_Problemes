@@ -124,7 +124,10 @@ int main(void)
                     if (AIMoveInProgess && scene == GAME)
                     {
                         // Search for path if not done yet
-                        
+                        int valeurCheminTotal = pathValue(aiData->bot->position.x, aiData->bot->position.y, aiData->grid, 0);
+                        printf("%d\n",valeurCheminTotal);
+
+
                         if (!threadLaunched)
                         {
                             sfThread_launch(aiThread);

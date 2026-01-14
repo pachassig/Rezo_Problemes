@@ -150,3 +150,39 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
     return false;
 }
 
+int pathValue(int posX, int posY, Grid* grid, int pathvalue) 
+{
+    if (grid->cell[posY][posX]->visited == true) {
+        return 10000000;
+    }
+    int valeurcase;
+    switch (grid->cell[posY][posX]->type) {
+    case (EMPTY):
+        valeurcase = 0;
+        break;
+    case (WALKABLE):
+        valeurcase = 1;
+        break;
+    case (START):
+        valeurcase = 2;
+        break;
+    case (END):
+        valeurcase = 3;
+        break;
+    case (OBSTACLE):
+        valeurcase = 4;
+        break;
+    }
+    printf("%d\n", valeurcase);
+    switch(valeurcase){
+    case 0:
+        return 10000000000;
+    case 3 :
+        pathvalue = pathvalue + valeurcase;
+        return (pathvalue);
+    default:
+        pathvalue = pathvalue + valeurcase;
+        return min(min(pathValue(posX-1, posY, grid, pathvalue), pathValue(posX + 1, posY, grid, pathvalue)), min(pathValue(posX, posY-1, grid, pathvalue), pathValue(posX, posY+1, grid, pathvalue)));
+    }
+    
+}

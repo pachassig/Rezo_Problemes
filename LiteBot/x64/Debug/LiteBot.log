@@ -1,8 +1,9 @@
 ﻿  Bot.c
+C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\Bot.c(179,16): warning C4305: 'return' : troncation de '__int64' à 'int'
   cell.c
   grid.c
   main.c
-  map.c
-  MapSelectionMenu.c
+C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\main.c(127,49): warning C4013: 'pathValue' non défini(e) ; extern retournant int pris par défaut
   Génération de code en cours...
+  LINK : C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\x64\Debug\LiteBot.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
   LiteBot.vcxproj -> C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\x64\Debug\LiteBot.exe

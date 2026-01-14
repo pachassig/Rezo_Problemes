@@ -56,6 +56,8 @@ Cell* CreateCell(sfVector2i cellCoord, float size, enum CellType type, int grid[
     cell->coord = cellCoord;
     
     cell->type = type;
+
+    cell->visited = false;
     
     cell->sprite = sfSprite_create();
     GetRequiredSpriteForCell(cell, grid);
