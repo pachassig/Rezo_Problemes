@@ -1,12 +1,230 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:MapSelectionMenu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:Bot.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:map.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:MapSelectionMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:cell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\basics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:basics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:grid.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 183,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bot.c",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c",
+              "RelativeDocumentMoniker": "Bot.c",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c",
+              "RelativeToolTip": "Bot.c",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-12T18:06:09.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MapSelectionMenu.c",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.c",
+              "RelativeDocumentMoniker": "MapSelectionMenu.c",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.c",
+              "RelativeToolTip": "MapSelectionMenu.c",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-12T18:06:15.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cell.c",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c",
+              "RelativeDocumentMoniker": "cell.c",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c",
+              "RelativeToolTip": "cell.c",
+              "ViewState": "AgIAADQAAAAAAAAAAAAvwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-12T18:06:12.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "map.c",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.c",
+              "RelativeDocumentMoniker": "map.c",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.c",
+              "RelativeToolTip": "map.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-12T18:06:14.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-12T18:06:13.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "grid.c",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.c",
+              "RelativeDocumentMoniker": "grid.c",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.c",
+              "RelativeToolTip": "grid.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-12T18:06:12.889Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 217,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "grid.h",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h",
+              "RelativeDocumentMoniker": "grid.h",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h",
+              "RelativeToolTip": "grid.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T18:16:55.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "map.h",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.h",
+              "RelativeDocumentMoniker": "map.h",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.h",
+              "RelativeToolTip": "map.h",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T18:16:56.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Bot.h",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h",
+              "RelativeDocumentMoniker": "Bot.h",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h",
+              "RelativeToolTip": "Bot.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T18:16:54.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "cell.h",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.h",
+              "RelativeDocumentMoniker": "cell.h",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.h",
+              "RelativeToolTip": "cell.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T18:16:55.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "basics.h",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\basics.h",
+              "RelativeDocumentMoniker": "basics.h",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\basics.h",
+              "RelativeToolTip": "basics.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T18:16:54.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MapSelectionMenu.h",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.h",
+              "RelativeDocumentMoniker": "MapSelectionMenu.h",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.h",
+              "RelativeToolTip": "MapSelectionMenu.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-12T18:16:57.006Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
