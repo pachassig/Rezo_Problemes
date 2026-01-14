@@ -150,9 +150,11 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
     return false;
 }
 
-int pathValue(int posX, int posY, Grid* grid, int pathvalue) 
+int pathValue(int posX, int posY, Grid* grid, int pathvalue, sfVector2i casesAParcourir[500])
 {
-    if (grid->cell[posY][posX]->visited == true) {
+    //il faut créer le tableau de cases dans le main et changer les appelations dans le main également
+
+    if (grid->cell[posY][posX]->visited == true) { // on veut garder en mémoire les cases traversées pour éviter les boucles infinies
         return 10000000;
     }
     int valeurcase;
@@ -173,7 +175,6 @@ int pathValue(int posX, int posY, Grid* grid, int pathvalue)
         valeurcase = 4;
         break;
     }
-    printf("%d\n", valeurcase);
     switch(valeurcase){
     case 0:
         return 10000000000;
@@ -182,7 +183,13 @@ int pathValue(int posX, int posY, Grid* grid, int pathvalue)
         return (pathvalue);
     default:
         pathvalue = pathvalue + valeurcase;
+        return (pathvalue);
+
+        /*
+        tableauValeurs[finDuTableau] = {posY,posX} // posY et posX sont les coordonnées de la prochaine case à parcourir 
         return min(min(pathValue(posX-1, posY, grid, pathvalue), pathValue(posX + 1, posY, grid, pathvalue)), min(pathValue(posX, posY-1, grid, pathvalue), pathValue(posX, posY+1, grid, pathvalue)));
+        */
+        
     }
     
 }

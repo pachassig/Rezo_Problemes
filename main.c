@@ -38,6 +38,8 @@ int main(void)
     aiThread = sfThread_create(MoveBot_AI, aiData);
     bool threadLaunched = false;
     
+    int valeurCheminTotal = 0;
+
     Map maps[20];
     for (int i = 0; i < 20; i++) // Initialize all maps to empty
     {
@@ -125,7 +127,7 @@ int main(void)
                     {
                         // Search for path if not done yet
                         int valeurCheminTotal = pathValue(aiData->bot->position.x, aiData->bot->position.y, aiData->grid, 0);
-                        printf("%d\n",valeurCheminTotal);
+                        printf("%d\n", valeurCheminTotal);
 
 
                         if (!threadLaunched)
@@ -158,8 +160,11 @@ int main(void)
                     }
                 } else
                 {
+                 
                     if (event.type == sfEvtKeyPressed)
                     {
+                        valeurCheminTotal = pathValue(aiData->bot->position.x, aiData->bot->position.y, aiData->grid, valeurCheminTotal);
+                        printf("%d\n", valeurCheminTotal);
                         enum MoveResult result = NOTHING;
                         switch (event.key.code)
                         {
