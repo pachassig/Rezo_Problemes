@@ -37,8 +37,6 @@ int main(void)
     aiData->pathResult = NOTHING;
     aiThread = sfThread_create(MoveBot_AI, aiData);
     bool threadLaunched = false;
-    
-    int valeurCheminTotal = 0;
 
     Map maps[20];
     for (int i = 0; i < 20; i++) // Initialize all maps to empty
@@ -94,6 +92,7 @@ int main(void)
                         {
                             printf("AI is searching for a path !\n"); // Call function for Pathfinding here (if it need to precompute path)
                             aiData->step = 0;
+                           
                         }
                         scene = GAME;
                         break;
@@ -126,8 +125,16 @@ int main(void)
                     if (AIMoveInProgess && scene == GAME)
                     {
                         // Search for path if not done yet
-                        int valeurCheminTotal = pathValue(aiData->bot->position.x, aiData->bot->position.y, aiData->grid, 0);
-                        printf("%d\n", valeurCheminTotal);
+                        if (aiData->step == 0)
+                        {
+                            if (!SearchPath_AI(aiData->bot, aiData->grid))
+                            {
+                                printf("No path found\n");
+                                AIMoveInProgess = false;
+                                break;
+                            }
+                        }
+                        
 
 
                         if (!threadLaunched)
@@ -154,6 +161,8 @@ int main(void)
                             scene = MAP_SELECTION;
                             break;
                         case NOTHING:
+                            threadLaunched = false;
+                            break;
                         default:
                             break;
                         }
@@ -163,8 +172,6 @@ int main(void)
                  
                     if (event.type == sfEvtKeyPressed)
                     {
-                        valeurCheminTotal = pathValue(aiData->bot->position.x, aiData->bot->position.y, aiData->grid, valeurCheminTotal);
-                        printf("%d\n", valeurCheminTotal);
                         enum MoveResult result = NOTHING;
                         switch (event.key.code)
                         {
