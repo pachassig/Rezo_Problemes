@@ -14,6 +14,9 @@ struct Bot* CreateBot()
     sfSprite_setPosition(bot->sprite, (sfVector2f){0, 0});
     float scale = ((float)CELL_SIZE / 24.f) * 0.75f;
     sfSprite_setScale(bot->sprite, (sfVector2f){scale, scale});
+    for (int i = 0; i < 5000; i++) {
+        bot->MoveQueue[i].type = INVALID;
+    }
     
     return bot;
 }
@@ -132,31 +135,154 @@ void AddMovement(struct Bot* bot, enum MovementType type, enum Direction directi
 
 void MoveBot_AI(struct GameData* data)
 {
-    if (!data->bot || !data->grid) return;
-    
-    while (data->bot->MoveQueue[data->step].type == MOVE_TO || data->bot->MoveQueue[data->step].type == JUMP)
+    if (!data || !data->bot || !data->grid)
+        return;
+
+    // Plus de mouvements
+    if (data->bot->MoveQueue[data->step].type == INVALID)
     {
-        sfSleep(sfMilliseconds(500));
-        enum MovementType type = data->bot->MoveQueue[data->step].type;
-        enum Direction direction = data->bot->MoveQueue[data->step].direction;
-        (data->step)++;
-        data->pathResult = MoveBot(data->bot, data->grid, type, direction);
+        data->pathResult = NO_MOVE_LEFT;
+        return;
     }
+
+    struct Move move = data->bot->MoveQueue[data->step];
+
+    sfSleep(sfMilliseconds(300));
+
+    data->pathResult = MoveBot(
+        data->bot,
+        data->grid,
+        move.type,
+        move.direction
+    );
+
+    data->step++;
 }
 
 bool SearchPath_AI(struct Bot* bot, Grid* grid)
 {
-    // Implement pathfinding algorithm to fill bot's MoveQueue
-    return false;
+    for (int i = 0; i < 5000; i++) {
+        bot->MoveQueue[i].type = INVALID;
+    }
+
+    if (!bot || !grid) return false;
+
+    int step = 0;
+    sfVector2i current = bot->position;
+    sfVector2i end = { -1, -1 };
+
+    // Trouver la case END
+    for (int y = 0; y < 20; y++)
+    {
+        for (int x = 0; x < 20; x++)
+        {
+            if (grid->cell[y][x]->type == END)
+            {
+                end.x = x;
+                end.y = y;
+                break;
+            }
+        }
+        if (end.x != -1) break;
+    }
+
+    if (end.x == -1) return false;
+
+    while ((current.x != end.x || current.y != end.y) && step < 4999)
+    {
+        int x = current.x;
+        int y = current.y;
+
+        // Sud
+        if (y + 1 < 20 && (grid->cell[y + 1][x]->type == WALKABLE || grid->cell[y + 1][x]->type == END))
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = SOUTH;
+            current.y += 1;
+            step++;
+        }
+        else if (y + 2 < 20 &&
+            grid->cell[y + 1][x]->type != EMPTY &&
+            (grid->cell[y + 2][x]->type == WALKABLE || grid->cell[y + 2][x]->type == END))
+        {
+            bot->MoveQueue[step].type = JUMP;
+            bot->MoveQueue[step].direction = SOUTH;
+            current.y += 2;
+            step++;
+        }
+        // Est
+        else if (x + 1 < 20 && (grid->cell[y][x + 1]->type == WALKABLE || grid->cell[y][x + 1]->type == END))
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = EAST;
+            current.x += 1;
+            step++;
+        }
+        else if (x + 2 < 20 &&
+            grid->cell[y][x + 1]->type != EMPTY &&
+            (grid->cell[y][x + 2]->type == WALKABLE || grid->cell[y][x + 2]->type == END))
+        {
+            bot->MoveQueue[step].type = JUMP;
+            bot->MoveQueue[step].direction = EAST;
+            current.x += 2;
+            step++;
+        }
+        // Ouest
+        else if (x - 1 >= 0 && (grid->cell[y][x - 1]->type == WALKABLE || grid->cell[y][x - 1]->type == END))
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = WEST;
+            current.x -= 1;
+            step++;
+        }
+        else if (x - 2 >= 0 &&
+            grid->cell[y][x - 1]->type != EMPTY &&
+            (grid->cell[y][x - 2]->type == WALKABLE || grid->cell[y][x - 2]->type == END))
+        {
+            bot->MoveQueue[step].type = JUMP;
+            bot->MoveQueue[step].direction = WEST;
+            current.x -= 2;
+            step++;
+        }
+        // Nord
+        else if (y - 1 >= 0 && (grid->cell[y - 1][x]->type == WALKABLE || grid->cell[y - 1][x]->type == END))
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = NORTH;
+            current.y -= 1;
+            step++;
+        }
+        else if (y - 2 >= 0 &&
+            grid->cell[y - 1][x]->type != EMPTY &&
+            (grid->cell[y - 2][x]->type == WALKABLE || grid->cell[y - 2][x]->type == END))
+        {
+            bot->MoveQueue[step].type = JUMP;
+            bot->MoveQueue[step].direction = NORTH;
+            current.y -= 2;
+            step++;
+        }
+        else
+        {
+            return false; // plus de mouvements possibles
+        }
+    }
+
+    // Marquer la fin de MoveQueue
+    bot->MoveQueue[step].type = INVALID;
+    return true;
 }
 
-int pathValue(int posX, int posY, Grid* grid, int pathvalue) 
+
+int pathValue(int posX, int posY, Grid* grid, int pathvalue)
 {
-    if (grid->cell[posY][posX]->visited == true) {
+    //il faut créer le tableau de cases dans le main et changer les appelations dans le main également
+    Cell* currentCell = grid->cell[posY][posX];
+    if (currentCell->visited == true) { // on veut garder en mémoire les cases traversées pour éviter les boucles infinies
         return 10000000;
     }
+    currentCell->visited = true;
     int valeurcase;
-    switch (grid->cell[posY][posX]->type) {
+    switch (currentCell->type) {
     case (EMPTY):
         valeurcase = 0;
         break;
@@ -173,16 +299,26 @@ int pathValue(int posX, int posY, Grid* grid, int pathvalue)
         valeurcase = 4;
         break;
     }
-    printf("%d\n", valeurcase);
-    switch(valeurcase){
+
+    switch (valeurcase) {
     case 0:
         return 10000000000;
-    case 3 :
+    case 3:
         pathvalue = pathvalue + valeurcase;
-        return (pathvalue);
+        break;
     default:
-        pathvalue = pathvalue + valeurcase;
-        return min(min(pathValue(posX-1, posY, grid, pathvalue), pathValue(posX + 1, posY, grid, pathvalue)), min(pathValue(posX, posY-1, grid, pathvalue), pathValue(posX, posY+1, grid, pathvalue)));
+        pathvalue = min(min(pathValue(posX - 1, posY, grid, pathvalue), 
+                            pathValue(posX + 1, posY, grid, pathvalue)), 
+                        min(pathValue(posX, posY - 1, grid, pathvalue), 
+                            pathValue(posX, posY + 1, grid, pathvalue))) + valeurcase;
+        break;
     }
+    currentCell->visited = false;
+    return (pathvalue);
+
+
+        
+        
+    
     
 }
