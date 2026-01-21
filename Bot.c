@@ -194,7 +194,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
         int y = current.y;
 
         // Sud
-        if (y + 1 < 20 && (grid->cell[y + 1][x]->type == WALKABLE || grid->cell[y + 1][x]->type == END))
+        if (y + 1 < 20 && (grid->cell[y + 1][x]->type == WALKABLE || grid->cell[y + 1][x]->type == END) && bot->MoveQueue[step-1].direction!=NORTH)
         {
             bot->MoveQueue[step].type = MOVE_TO;
             bot->MoveQueue[step].direction = SOUTH;
@@ -203,7 +203,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
         }
         else if (y + 2 < 20 &&
             grid->cell[y + 1][x]->type != EMPTY &&
-            (grid->cell[y + 2][x]->type == WALKABLE || grid->cell[y + 2][x]->type == END))
+            (grid->cell[y + 2][x]->type == WALKABLE || grid->cell[y + 2][x]->type == END) && bot->MoveQueue[step - 1].direction != NORTH)
         {
             bot->MoveQueue[step].type = JUMP;
             bot->MoveQueue[step].direction = SOUTH;
@@ -211,7 +211,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
             step++;
         }
         // Est
-        else if (x + 1 < 20 && (grid->cell[y][x + 1]->type == WALKABLE || grid->cell[y][x + 1]->type == END))
+        else if (x + 1 < 20 && (grid->cell[y][x + 1]->type == WALKABLE || grid->cell[y][x + 1]->type == END) && bot->MoveQueue[step - 1].direction != WEST)
         {
             bot->MoveQueue[step].type = MOVE_TO;
             bot->MoveQueue[step].direction = EAST;
@@ -220,7 +220,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
         }
         else if (x + 2 < 20 &&
             grid->cell[y][x + 1]->type != EMPTY &&
-            (grid->cell[y][x + 2]->type == WALKABLE || grid->cell[y][x + 2]->type == END))
+            (grid->cell[y][x + 2]->type == WALKABLE || grid->cell[y][x + 2]->type == END) && bot->MoveQueue[step - 1].direction != WEST)
         {
             bot->MoveQueue[step].type = JUMP;
             bot->MoveQueue[step].direction = EAST;
@@ -228,7 +228,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
             step++;
         }
         // Ouest
-        else if (x - 1 >= 0 && (grid->cell[y][x - 1]->type == WALKABLE || grid->cell[y][x - 1]->type == END))
+        else if (x - 1 >= 0 && (grid->cell[y][x - 1]->type == WALKABLE || grid->cell[y][x - 1]->type == END) && bot->MoveQueue[step - 1].direction != EAST)
         {
             bot->MoveQueue[step].type = MOVE_TO;
             bot->MoveQueue[step].direction = WEST;
@@ -237,7 +237,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
         }
         else if (x - 2 >= 0 &&
             grid->cell[y][x - 1]->type != EMPTY &&
-            (grid->cell[y][x - 2]->type == WALKABLE || grid->cell[y][x - 2]->type == END))
+            (grid->cell[y][x - 2]->type == WALKABLE || grid->cell[y][x - 2]->type == END) && bot->MoveQueue[step - 1].direction != EAST)
         {
             bot->MoveQueue[step].type = JUMP;
             bot->MoveQueue[step].direction = WEST;
@@ -245,7 +245,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
             step++;
         }
         // Nord
-        else if (y - 1 >= 0 && (grid->cell[y - 1][x]->type == WALKABLE || grid->cell[y - 1][x]->type == END))
+        else if (y - 1 >= 0 && (grid->cell[y - 1][x]->type == WALKABLE || grid->cell[y - 1][x]->type == END) && bot->MoveQueue[step - 1].direction != SOUTH)
         {
             bot->MoveQueue[step].type = MOVE_TO;
             bot->MoveQueue[step].direction = NORTH;
@@ -254,7 +254,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
         }
         else if (y - 2 >= 0 &&
             grid->cell[y - 1][x]->type != EMPTY &&
-            (grid->cell[y - 2][x]->type == WALKABLE || grid->cell[y - 2][x]->type == END))
+            (grid->cell[y - 2][x]->type == WALKABLE || grid->cell[y - 2][x]->type == END) && bot->MoveQueue[step - 1].direction != SOUTH)
         {
             bot->MoveQueue[step].type = JUMP;
             bot->MoveQueue[step].direction = NORTH;

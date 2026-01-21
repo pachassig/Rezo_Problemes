@@ -3,8 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:Bot.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,19 +22,12 @@
       "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\basics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:basics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -61,24 +61,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 228,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Bot.c",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c",
               "RelativeDocumentMoniker": "Bot.c",
-              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c*",
-              "RelativeToolTip": "Bot.c*",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAgwJMAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c",
+              "RelativeToolTip": "Bot.c",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAuwP0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-14T17:22:22.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c",
               "RelativeDocumentMoniker": "main.c",
@@ -86,8 +86,7 @@
               "RelativeToolTip": "main.c",
               "ViewState": "AgIAAIsAAAAAAAAAAAAAAH8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-14T17:22:22.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.604Z"
             },
             {
               "$type": "Document",
@@ -99,18 +98,17 @@
               "RelativeToolTip": "MapSelectionMenu.c",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-14T17:22:22.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "cell.c",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c",
               "RelativeDocumentMoniker": "cell.c",
               "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c",
               "RelativeToolTip": "cell.c",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-14T17:22:22.601Z",
               "EditorCaption": ""
@@ -125,8 +123,7 @@
               "RelativeToolTip": "map.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-14T17:22:22.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.603Z"
             },
             {
               "$type": "Document",
@@ -144,21 +141,8 @@
         },
         {
           "DockedWidth": 172,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "grid.h",
-              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h",
-              "RelativeDocumentMoniker": "grid.h",
-              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h",
-              "RelativeToolTip": "grid.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-14T17:22:22.605Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
@@ -169,8 +153,7 @@
               "RelativeToolTip": "map.h",
               "ViewState": "AgIAAH4AAAAAAAAAAAAAAJYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-14T17:22:22.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.608Z"
             },
             {
               "$type": "Document",
@@ -182,12 +165,11 @@
               "RelativeToolTip": "Bot.h",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-14T17:22:22.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "cell.h",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.h",
               "RelativeDocumentMoniker": "cell.h",
@@ -195,12 +177,11 @@
               "RelativeToolTip": "cell.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-14T17:22:22.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "basics.h",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\basics.h",
               "RelativeDocumentMoniker": "basics.h",
@@ -208,12 +189,11 @@
               "RelativeToolTip": "basics.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-14T17:22:22.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "stdio.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h",
@@ -223,6 +203,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-14T18:21:16.733Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "grid.h",
+              "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h",
+              "RelativeDocumentMoniker": "grid.h",
+              "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h",
+              "RelativeToolTip": "grid.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-14T17:22:22.605Z"
             },
             {
               "$type": "Document",
