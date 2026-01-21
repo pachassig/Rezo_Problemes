@@ -35,6 +35,7 @@ int main(void)
     aiData->grid = NULL;
     aiData->step = 0;
     aiData->pathResult = NOTHING;
+    aiData->hasMove = false;
     aiThread = sfThread_create(MoveBot_AI, aiData);
     bool threadLaunched = false;
 
@@ -91,7 +92,12 @@ int main(void)
                         if (AIMode)
                         {
                             printf("AI is searching for a path !\n"); // Call function for Pathfinding here (if it need to precompute path)
+                            AIMoveInProgess = true;
                             aiData->step = 0;
+                            if (!threadLaunched) {
+                                sfThread_launch(aiThread);
+                                threadLaunched = true;
+                            }
                            
                         }
                         scene = GAME;
@@ -113,18 +119,20 @@ int main(void)
                         switch (event.key.code)
                         {
                         case sfKeyEnter:
-                            AIMoveInProgess = !AIMoveInProgess;
+                            AIMoveInProgess = !AIMoveInProgess; // Start/stop AI
                             break;
                         case sfKeyBackspace:
                             scene = MAP_SELECTION;
+                            AIMoveInProgess = false;
                             break;
                         default:
                             break;
                         }
                     }
-                    if (AIMoveInProgess && scene == GAME)
+
+                    if (AIMoveInProgess)
                     {
-                        // Search for path if not done yet
+                        // 1️⃣ Préparer le chemin si ce n'est pas fait
                         if (aiData->step == 0)
                         {
                             if (!SearchPath_AI(aiData->bot, aiData->grid))
@@ -134,40 +142,60 @@ int main(void)
                                 break;
                             }
                         }
-                        
 
-
+                        // 2️⃣ Lancer le thread si pas encore lancé
                         if (!threadLaunched)
                         {
                             sfThread_launch(aiThread);
                             threadLaunched = true;
                         }
-                        
-                        switch(aiData->pathResult)
+
+                        // 3️⃣ Gérer le timer pour mouvements fluides
+                        static sfClock* botClock = NULL;
+                        static float moveCooldown = 0.f;
+                        if (!botClock) botClock = sfClock_create();
+
+                        float dt = sfTime_asMilliseconds(sfClock_restart(botClock));
+                        moveCooldown += dt;
+
+                        const float MOVE_INTERVAL = 100.f; // vitesse du bot, plus petit = plus rapide
+
+                        // 4️⃣ Appliquer le mouvement si prêt et cooldown atteint
+                        if (aiData->hasMove && moveCooldown >= MOVE_INTERVAL)
+                        {
+                            aiData->pathResult = MoveBot(
+                                aiData->bot,
+                                aiData->grid,
+                                aiData->nextMove.type,
+                                aiData->nextMove.direction
+                            );
+                            aiData->hasMove = false;
+                            moveCooldown = 0.f;
+                        }
+
+                        // 5️⃣ Vérifier le résultat après mouvement
+                        switch (aiData->pathResult)
                         {
                         case NO_MOVE_LEFT:
                             printf("No movement left\n");
-                            sfThread_terminate(aiThread);
+                            AIMoveInProgess = false;
                             scene = MAP_SELECTION;
                             break;
                         case DEAD:
                             printf("Bot is dead\n");
-                            sfThread_terminate(aiThread);
+                            AIMoveInProgess = false;
                             scene = MAP_SELECTION;
                             break;
                         case REACH_END:
-                            printf("Congratulations ! Bot reach the end !\n");
-                            sfThread_terminate(aiThread);
+                            printf("Congratulations ! Bot reached the end !\n");
+                            AIMoveInProgess = false;
                             scene = MAP_SELECTION;
-                            break;
-                        case NOTHING:
-                            threadLaunched = false;
                             break;
                         default:
                             break;
                         }
                     }
-                } else
+                }else
                 {
                  
                     if (event.type == sfEvtKeyPressed)

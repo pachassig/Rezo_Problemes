@@ -45,6 +45,8 @@ struct GameData
     Grid* grid;
     int step;
     int pathResult;
+    struct Move nextMove;
+    bool hasMove;
 };
 
 /// <summary>

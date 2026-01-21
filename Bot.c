@@ -133,31 +133,36 @@ void AddMovement(struct Bot* bot, enum MovementType type, enum Direction directi
     bot->MoveQueue[currentLength + 1].type = INVALID;
 }
 
-void MoveBot_AI(struct GameData* data)
+void MoveBot_AI(void* userData)
 {
-    if (!data || !data->bot || !data->grid)
-        return;
+    struct GameData* data = (struct GameData*)userData;
 
-    // Plus de mouvements
-    if (data->bot->MoveQueue[data->step].type == INVALID)
+    data->pathResult = NOTHING;
+
+    while (1)
     {
-        data->pathResult = NO_MOVE_LEFT;
-        return;
+        // ATTENDRE que le main applique le mouvement précédent
+        while (data->hasMove) {
+            sfSleep(sfMilliseconds(1));
+        }
+
+        // Vérifier qu'il reste un mouvement
+        if (data->bot->MoveQueue[data->step].type == INVALID)
+        {
+            data->pathResult = NO_MOVE_LEFT;
+            return;
+        }
+
+        // Préparer le prochain mouvement
+        data->nextMove = data->bot->MoveQueue[data->step];
+        data->hasMove = true;
+
+        data->step++;
+
+        
     }
-
-    struct Move move = data->bot->MoveQueue[data->step];
-
-    sfSleep(sfMilliseconds(300));
-
-    data->pathResult = MoveBot(
-        data->bot,
-        data->grid,
-        move.type,
-        move.direction
-    );
-
-    data->step++;
 }
+
 
 bool SearchPath_AI(struct Bot* bot, Grid* grid)
 {
@@ -192,9 +197,60 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
     {
         int x = current.x;
         int y = current.y;
+        /*END*/
+        //Nord
+        if (y - 1 >= 0 && (grid->cell[y - 1][x]->type == END) && bot->MoveQueue[step - 1].direction != SOUTH)
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = NORTH;
+            current.y -= 1;
+            step++;
+        }
+        //Sud
+        else if (y + 1 < 20 && (grid->cell[y + 1][x]->type == END) && bot->MoveQueue[step - 1].direction != NORTH)
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = SOUTH;
+            current.y += 1;
+            step++;
+        }
+        //Est
+        else if (x + 1 < 20 && (grid->cell[y][x + 1]->type == END) && bot->MoveQueue[step - 1].direction != WEST)
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = EAST;
+            current.x += 1;
+            step++;
+        }
+        //Ouest
+        else if (x - 1 >= 0 && (grid->cell[y][x - 1]->type == END) && bot->MoveQueue[step - 1].direction != EAST)
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = WEST;
+            current.x -= 1;
+            step++;
+        }
 
+        /*WALKABLE*/
+        // Nord
+         else if (y - 1 >= 0 && (grid->cell[y - 1][x]->type == WALKABLE || grid->cell[y - 1][x]->type == END) && bot->MoveQueue[step - 1].direction != SOUTH)
+        {
+            bot->MoveQueue[step].type = MOVE_TO;
+            bot->MoveQueue[step].direction = NORTH;
+            current.y -= 1;
+            step++;
+        }
+        else if (y - 2 >= 0 &&
+            grid->cell[y - 1][x]->type != EMPTY &&
+            (grid->cell[y - 2][x]->type == WALKABLE || grid->cell[y - 2][x]->type == END) && bot->MoveQueue[step - 1].direction != SOUTH)
+        {
+            bot->MoveQueue[step].type = JUMP;
+            bot->MoveQueue[step].direction = NORTH;
+            current.y -= 2;
+            step++;
+        }
         // Sud
-        if (y + 1 < 20 && (grid->cell[y + 1][x]->type == WALKABLE || grid->cell[y + 1][x]->type == END) && bot->MoveQueue[step-1].direction!=NORTH)
+        else if (y + 1 < 20 && (grid->cell[y + 1][x]->type == WALKABLE || grid->cell[y + 1][x]->type == END) && bot->MoveQueue[step-1].direction!=NORTH)
         {
             bot->MoveQueue[step].type = MOVE_TO;
             bot->MoveQueue[step].direction = SOUTH;
@@ -244,23 +300,7 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
             current.x -= 2;
             step++;
         }
-        // Nord
-        else if (y - 1 >= 0 && (grid->cell[y - 1][x]->type == WALKABLE || grid->cell[y - 1][x]->type == END) && bot->MoveQueue[step - 1].direction != SOUTH)
-        {
-            bot->MoveQueue[step].type = MOVE_TO;
-            bot->MoveQueue[step].direction = NORTH;
-            current.y -= 1;
-            step++;
-        }
-        else if (y - 2 >= 0 &&
-            grid->cell[y - 1][x]->type != EMPTY &&
-            (grid->cell[y - 2][x]->type == WALKABLE || grid->cell[y - 2][x]->type == END) && bot->MoveQueue[step - 1].direction != SOUTH)
-        {
-            bot->MoveQueue[step].type = JUMP;
-            bot->MoveQueue[step].direction = NORTH;
-            current.y -= 2;
-            step++;
-        }
+        
         else
         {
             return false; // plus de mouvements possibles
@@ -273,52 +313,3 @@ bool SearchPath_AI(struct Bot* bot, Grid* grid)
 }
 
 
-int pathValue(int posX, int posY, Grid* grid, int pathvalue)
-{
-    //il faut créer le tableau de cases dans le main et changer les appelations dans le main également
-    Cell* currentCell = grid->cell[posY][posX];
-    if (currentCell->visited == true) { // on veut garder en mémoire les cases traversées pour éviter les boucles infinies
-        return 10000000;
-    }
-    currentCell->visited = true;
-    int valeurcase;
-    switch (currentCell->type) {
-    case (EMPTY):
-        valeurcase = 0;
-        break;
-    case (WALKABLE):
-        valeurcase = 1;
-        break;
-    case (START):
-        valeurcase = 2;
-        break;
-    case (END):
-        valeurcase = 3;
-        break;
-    case (OBSTACLE):
-        valeurcase = 4;
-        break;
-    }
-
-    switch (valeurcase) {
-    case 0:
-        return 10000000000;
-    case 3:
-        pathvalue = pathvalue + valeurcase;
-        break;
-    default:
-        pathvalue = min(min(pathValue(posX - 1, posY, grid, pathvalue), 
-                            pathValue(posX + 1, posY, grid, pathvalue)), 
-                        min(pathValue(posX, posY - 1, grid, pathvalue), 
-                            pathValue(posX, posY + 1, grid, pathvalue))) + valeurcase;
-        break;
-    }
-    currentCell->visited = false;
-    return (pathvalue);
-
-
-        
-        
-    
-    
-}

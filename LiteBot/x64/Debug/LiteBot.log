@@ -1,6 +1,6 @@
 ﻿  Bot.c
+C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\Bot.c(136,23): warning C4028: paramètre formel 1 différent de la déclaration
   main.c
-C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\Bot.c(305,16): warning C4305: 'return' : troncation de '__int64' à 'int'
+C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\main.c(158,36): warning C4244: 'initialisation' : conversion de 'sfInt32' en 'float', perte possible de données
   Génération de code en cours...
-  LINK : C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\x64\Debug\LiteBot.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
   LiteBot.vcxproj -> C:\Users\paulc\Documents\projets vscode\c\Rezo_Problemes\x64\Debug\LiteBot.exe
