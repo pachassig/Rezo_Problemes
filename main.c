@@ -52,6 +52,7 @@ int main(void)
     maps[3] = CreateMap("Make a Choice", MAP_04);
     maps[4] = CreateMap("The Maze", MAP_05);
     maps[5] = CreateMap("Void Evader", MAP_06);
+    maps[6] = CreateMap("Le Grand 8", MAP_07);
     // Add more maps as needed here
     
     ChangeMap(mapSelectionMenu, &maps[currentMap]);
