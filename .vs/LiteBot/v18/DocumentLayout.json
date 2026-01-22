@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:Bot.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:MapSelectionMenu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,15 +23,23 @@
       "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:basics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:cell.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:Bot.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|solutionrelative:MapSelectionMenu.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A0FA91A-77F9-4ABD-8360-C87F24D30FAA}|LiteBot.vcxproj|C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -61,37 +61,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 228,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Bot.c",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c",
               "RelativeDocumentMoniker": "Bot.c",
               "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.c",
               "RelativeToolTip": "Bot.c",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAAAJEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABEBAAAAAAAAAAAAACoBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-14T17:22:22.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c",
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwFgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-14T17:22:22.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "MapSelectionMenu.c",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\MapSelectionMenu.c",
               "RelativeDocumentMoniker": "MapSelectionMenu.c",
@@ -99,18 +99,17 @@
               "RelativeToolTip": "MapSelectionMenu.c",
               "ViewState": "AgIAAEsAAAAAAAAAAAAQwF8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-14T17:22:22.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T17:22:22.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "cell.c",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c",
               "RelativeDocumentMoniker": "cell.c",
               "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.c",
               "RelativeToolTip": "cell.c",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDkAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-14T17:22:22.601Z",
               "EditorCaption": ""
@@ -143,37 +142,37 @@
         },
         {
           "DockedWidth": 172,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "map.h",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.h",
               "RelativeDocumentMoniker": "map.h",
               "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\map.h",
               "RelativeToolTip": "map.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAwwJIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-14T17:22:22.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Bot.h",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h",
               "RelativeDocumentMoniker": "Bot.h",
               "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\Bot.h",
               "RelativeToolTip": "Bot.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-14T17:22:22.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "cell.h",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\cell.h",
               "RelativeDocumentMoniker": "cell.h",
@@ -186,20 +185,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "basics.h",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\basics.h",
               "RelativeDocumentMoniker": "basics.h",
               "ToolTip": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\basics.h",
               "RelativeToolTip": "basics.h",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-14T17:22:22.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "grid.h",
               "DocumentMoniker": "C:\\Users\\paulc\\Documents\\projets vscode\\c\\Rezo_Problemes\\grid.h",
               "RelativeDocumentMoniker": "grid.h",
@@ -212,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "stdio.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h",
@@ -220,8 +219,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stdio.h",
               "ViewState": "AgIAADUCAAAAAAAAAAAgwIUCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-14T18:21:16.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T18:21:16.733Z"
             },
             {
               "$type": "Document",
